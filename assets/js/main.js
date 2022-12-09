@@ -12,6 +12,7 @@ let timer = `${doisNumeros(h)}:${doisNumeros(m)}:${doisNumeros(s)}`;
 
 iniciar.addEventListener('click', function (event) {
     relogio.className = 'relogio';
+    clearInterval(timer);
     timer = setInterval(function() {
         s++;
         if (s > 59) {
